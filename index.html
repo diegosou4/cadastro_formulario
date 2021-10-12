@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario
+    </title>
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>  
+
+    <section class="container">
+        <h4>Cadastrar Doadores</h4>
+        <div class="label-float">
+            <input type="text" id="nome" placeholder=" " />
+    <label id="nomelabel">Nome</label>
+          </div>
+
+          <div class="label-float">
+            <input type="text" placeholder=" "  id="cpf" maxlength="11" required/>
+            <label id="cpflabel">CPF</label>
+          </div>
+
+          <div class="label-float">
+            <input type="text" placeholder=" " id="celphone" required/>
+            <label id="celphone_label">Telefone</label>
+            </div>
+
+          <div class="gridtemplate">
+
+            <div class="label-float divtwo">
+                <input type="text" placeholder=" " id="valueinput" required/>
+                <label id="valuelabel">Valor(R$)</label>
+              </div>
+              
+          <div class="label-float divtwo">
+
+            <select name="op" id="op" class="seletor">
+              <option value="orgao">Doação de Orgão</option>
+              <option value="sangueA">Doação de Sangue Tipo A</option>
+              <option value="sangueB">Doação de Sangue Tipo B</option>
+              <option value="sangueO">Doação de Sangue Tipo O</option>     
+
+          </select>
+          </div>
+        </div>
+     
+        <div class="label-float">
+            <input type="date" placeholder=" " id="dateofbirth"   required/>
+            <label id="dateofbirthlabel">Data de Nascimento</label>
+          </div>
+        </div>
+      
+        <div class="gridtemplate">
+        <div class="label-float">
+          <input type="text"  maxlength="8"  placeholder=" " id="cep" required/>
+          <label id="ceplabel">CEP</label>
+          </div>
+     
+          <div class="label-float">
+            <input type="text" placeholder=" " id="numero" required/>
+            <label>Numero</label>
+          </div>
+          </div>
+     
+     
+          <div class="label-float">
+            <input type="text" placeholder=" " id="andress" required/>
+            <label>Endereco</label>
+          </div>
+        
+          <div class="label-float">
+                 <input type="text" placeholder=" " id="district" required/>
+                       <label>Bairro</label>
+          </div>
+        
+          <div class="gridtemplate parcial">
+         
+             <div class="label-float">
+                  <input type="text" placeholder=" " id="city" required/>
+                      <label>Cidade</label>
+         </div>
+                <div class="label-float">
+                     <input type="text" placeholder=" " id="uf" required/>
+                         <label>UF</label>
+                </div>
+          </div>
+          <div>
+          <button class="buttonsend" id="enviar">Enviar</button>
+        </div>
+      </form>
+        </section>
+       
+
+    <script src="app.js" defer ></script>
+</body>
+</html>
